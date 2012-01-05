@@ -33,10 +33,10 @@ int multiply(int num1, int num2);
 int main(void)
 {
 	int num[3];
-
+	// / A mini dialog we are using to get the user to make a choice
 	printf("Welcome to the Calculator\n");
 	printf("Enter The Numbers we are going to use: ");
-	scanf("%d%d",&num[0], &num[1]);
+	scanf("%d%d",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
 
 	printf("1. Add\n");
 	printf("2. Multiply\n");
@@ -45,7 +45,7 @@ int main(void)
 
 
 
-
+	// This function is going to be used to switch the functions if some aren't used.
 	switch (num[2])
 	{
 		case 1:
@@ -66,6 +66,7 @@ int main(void)
 
 }
 
+// These are the functions we are going to use inside the main function
 int add(int num1, int num2)
 {
 	return num1 + num2;
