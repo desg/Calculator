@@ -26,36 +26,42 @@
 #include <stdlib.h>
 
 
-int add(int num1, int num2);
-int subtract(int num1, int num2);
-int multiply(int num1, int num2);
+float add(float num1, float num2);
+float subtract(float num1, float num2);
+float multiply(float num1, float num2);
+float divide(float num1, float num2);
 
 int main(void)
 {
-	int num[3];
+	int whichSign;
+	float num[2];
 	// / A mini dialog we are using to get the user to make a choice
 	printf("Welcome to the Calculator\n");
 	printf("Enter The Numbers we are going to use: ");
-	scanf("%d%d",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
+	scanf("%f%f",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
 
 	printf("1. Add\n");
 	printf("2. Multiply\n");
 	printf("3. Subtract\n");
-	scanf("%d",&num[2]);
+	printf("4. Division\n");
+	scanf("%d",&whichSign);
 
 
 
 	// This function is going to be used to switch the functions if some aren't used.
-	switch (num[2])
+	switch (whichSign)
 	{
 		case 1:
-			printf("The sum is : %d", add(num[0], num[1]));
+			printf("The sum is : %f", add(num[0], num[1]));
 			break;
 		case 2:
-			printf("The product is : %d", multiply(num[0],num[1]));
+			printf("The product is : %f", multiply(num[0],num[1]));
 			break;
 		case 3:
-			printf("The difference is : %d", subtract(num[0], num[1]));
+			printf("The difference is : %f", subtract(num[0], num[1]));
+			break;
+		case 4:
+			printf("The Quotient is : %f", divide(num[0], num[1]));
 			break;
 		default:
 			printf("Run it again with the correct choice.");
@@ -67,17 +73,22 @@ int main(void)
 }
 
 // These are the functions we are going to use inside the main function
-int add(int num1, int num2)
+float add(float num1, float num2)
 {
 	return num1 + num2;
 }
 
-int multiply(int num1, int num2)
+float multiply(float num1, float num2)
 {
 	return num1 * num2;
 }
 
-int subtract(int num1, int num2)
+float subtract(float num1, float num2)
 {
 	return num1 - num2;
+}
+
+float divide( float num1, float num2)
+{
+	return num1 / num2;
 }
