@@ -24,6 +24,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include<math.h>
 
 
 float add(float num1, float num2);
