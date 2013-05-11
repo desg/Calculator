@@ -34,23 +34,24 @@ float divide(float num1, float num2);
 
 int main(void)
 {
-	int whichSign;
+	int choice;
 	float num[2];
 	// / A mini dialog we are using to get the user to make a choice
-	printf("Welcome to the Calculator\n");
-	printf("Enter The Numbers we are going to use: ");
+	printf("Welcome to the Calculator world\n");
+	printf("\n Enter The Any Two Number for Calc: ");
 	scanf("%f%f",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
 
-	printf("1. Add\n");
-	printf("2. Multiply\n");
-	printf("3. Subtract\n");
+	printf("\n Enter your choice");
+	printf("1. Addition\n");
+	printf("2. Multiplication\n");
+	printf("3. Subtraction\n");
 	printf("4. Division\n");
-	scanf("%d",&whichSign);
+	scanf("%d",&Choice);
 
 
 
 	// This function is going to be used to switch the functions if some aren't used.
-	switch (whichSign)
+	switch (choice)
 	{
 		case 1:
 			printf("The sum is : %f", add(num[0], num[1]));
