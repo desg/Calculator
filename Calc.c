@@ -42,7 +42,7 @@ int main(void)
 	scanf("%f%f",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
 
 	printf("\nEnter your choice:\n");
-	printf("1. Addition\n");
+	printf("1. Addition of numbers\n");
 	printf("2. Multiplication\n");
 	printf("3. Subtraction\n");
 	printf("4. Division\n");
