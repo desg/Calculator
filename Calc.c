@@ -43,8 +43,8 @@ int main(void)
 
 	printf("\nEnter your choice:\n");
 	printf("1. Addition of numbers\n");
-	printf("2. Multiplication\n");
-	printf("3. Subtraction\n");
+	printf("2. Multiplication of numbers\n");
+	printf("3. Subtraction of numbers\n");
 	printf("4. Division\n");
 	scanf("%d",&choice);
 
