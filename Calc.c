@@ -57,16 +57,16 @@ int main(void)
 			printf("The sum is %f and %f : %f",num[0],num[1], add(num[0], num[1]));
 			break;
 		case 2:
-			printf("The product is : %f", multiply(num[0],num[1]));
+			printf("The product is %f and %f : %f",num[0],num[1], multiply(num[0],num[1]));
 			break;
 		case 3:
-			printf("The difference is : %f", subtract(num[0], num[1]));
+			printf("The difference is %f and %f : %f", num[0],num[1],subtract(num[0], num[1]));
 			break;
 		case 4:
-			printf("The Quotient is : %f", divide(num[0], num[1]));
+			printf("The Quotient is %f and %f : %f",num[0],num[1], divide(num[0], num[1]));
 			break;
 		default:
-			printf("Run it again with the correct choice.");
+			printf("Wrong choice.");
 			return 1;
 
 	}
