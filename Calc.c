@@ -41,12 +41,12 @@ int main(void)
 	printf("\n Enter The Any Two Number for Calc: ");
 	scanf("%f%f",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
 
-	printf("\n Enter your choice");
+	printf("\nEnter your choice:\n");
 	printf("1. Addition\n");
 	printf("2. Multiplication\n");
 	printf("3. Subtraction\n");
 	printf("4. Division\n");
-	scanf("%d",&Choice);
+	scanf("%d",&choice);
 
 
 
