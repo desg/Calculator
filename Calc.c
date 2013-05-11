@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  *
- *
+ * other member harshal tarle
  */
 
 
@@ -54,7 +54,7 @@ int main(void)
 	switch (choice)
 	{
 		case 1:
-			printf("The sum is : %f", add(num[0], num[1]));
+			printf("The sum is %f and %f : %f",num[0],num[1], add(num[0], num[1]));
 			break;
 		case 2:
 			printf("The product is : %f", multiply(num[0],num[1]));
