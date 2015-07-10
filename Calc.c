@@ -34,11 +34,12 @@ float divide(float num1, float num2);
 
 int main(void)
 {
+    printf("Welcome to the Calculator world\n");
     while(1) {
         int choice;
         float num[2];
         // / A mini dialog we are using to get the user to make a choice
-        printf("Welcome to the Calculator world\n");
+
         printf("\n Enter The Any Two Number for Calc: ");
         scanf("%f%f",&num[0], &num[1]); //These are the numbers we are going to use inside of the calculator
 
