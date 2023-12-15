@@ -31,6 +31,8 @@ float add(float num1, float num2);
 float subtract(float num1, float num2);
 float multiply(float num1, float num2);
 float divide(float num1, float num2);
+//New function of Floor Division Added
+int floorDivide(float num1, float num2);
 
 int main(void)
 {
@@ -46,6 +48,7 @@ int main(void)
 	printf("2. Multiplication of numbers\n");
 	printf("3. Subtraction of numbers\n");
 	printf("4. Division\n");
+	printf("5. Floor Division \n");
 	scanf("%d",&choice);
 
 
@@ -64,6 +67,9 @@ int main(void)
 			break;
 		case 4:
 			printf("The Quotient is %f and %f : %f",num[0],num[1], divide(num[0], num[1]));
+			break;
+		case 5:
+			printf("The floor division  is %f and %f : %d",num[0],num[1], floorDivide(num[0], num[1]));
 			break;
 		default:
 			printf("Wrong choice.");
@@ -94,3 +100,14 @@ float divide( float num1, float num2)
 {
 	return num1 / num2;
 }
+
+int floorDivide(float num1, float num2){
+	int answer= (int)num1/num2;
+	return answer;
+}
+
+
+
+
+
+
